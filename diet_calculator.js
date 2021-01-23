@@ -127,17 +127,6 @@ $.each(added_items_array,function(index,value){
 $(".added").append("<div class = 'rh col-lg-2 col-md-3 col-sm-4 col-6'><div class = 'kind'><h1 style = 'font-size:18px'>"+added_items_array[index]+"</h1><img src = '"+added_items_array[index]+".png' alt = '' width = '135px'><h2 class = 'remove-item'>remove item</h2></div></div>");
 });
 
-$(".kind").on("mouseover",function(){
-  $(this).find(".add-item").css("visibility","visible");
-  $(this).find(".remove-item").css("visibility","visible");
-});
-
-$(".kind").on("mouseout",function(){
-  $(this).find(".add-item").css("visibility","hidden");
-  $(this).find(".remove-item").css("visibility","hidden");
-});
-
-
 $(".ah").on("click",function(event){
   $(".add-item").css("visibility","hidden");
   var current_number_of_calories;
