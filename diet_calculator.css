@@ -182,6 +182,9 @@ font-size:40px;
     position:relative;
     top:50px;
   }
+ .categories-header{
+   font-size:25px; 
+  }
 }
 @media only screen and (min-width:576px) and (max-width: 768px) {
 
