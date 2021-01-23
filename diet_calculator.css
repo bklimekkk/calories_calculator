@@ -104,7 +104,7 @@ transform:scale(1.5);
   color:#ffdf91;
   width:98%;
   height:90%;
-  border-radius:50px;
+  border-radius:30px;
   transition: transform 0.2s;
   box-shadow:0 0 20px #184d47;
 }
