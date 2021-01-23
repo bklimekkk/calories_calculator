@@ -128,7 +128,6 @@ $(".added").append("<div class = 'rh col-lg-2 col-md-3 col-sm-4 col-6'><div clas
 });
 
 $(".ah").on("click",function(event){
-  $(".add-item").css("visibility","hidden");
   var current_number_of_calories;
   if(localStorage.getItem("all-calories")===null)
   current_number_of_calories = 0;
