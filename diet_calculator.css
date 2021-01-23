@@ -142,7 +142,6 @@ color:#d6efc7;
 }
 
 .add-item, .remove-item{
-  visibility:hidden;
 position:relative;
 top:15px;
 }
@@ -199,9 +198,6 @@ font-size:40px;
   }
  .categories-image{
    width:150px;
-  }
-  ..add-item, .remove-item{
-    visibility:visible;
   }
 }
 @media only screen and (min-width:576px) and (max-width: 768px) {
