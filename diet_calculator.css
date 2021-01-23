@@ -191,6 +191,12 @@ font-size:40px;
   .h{
     height:250px;
   }
+  .kind{
+    border-radius:20px;
+  }
+  .rice-and-pasta{
+    font-size:20px;
+  }
  .categories-image{
    width:150px;
   }
