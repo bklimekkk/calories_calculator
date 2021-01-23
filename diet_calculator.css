@@ -1,0 +1,206 @@
+body{
+  background:#f0c38e;
+}
+
+input[list]{
+  border-radius:30px;
+  width:40%;
+}
+
+a{
+  color:#f0c38e;
+}
+
+button{
+  border-style:none;
+}
+
+a:hover{
+  color:#f1aa9b;
+}
+
+.ah .kind h1, .ah .kind img, .ah .kind h2, .rh .kind h1, .rh .kind img, .rh .kind h2{
+  position:relative;
+  top:20px;
+}
+.ah .kind h1, .rh .kind h1{
+  font-size:23px;
+}
+
+.ui-autocomplete{
+ border-radius:5px;
+  cursor:pointer;
+  overflow-y:scroll;
+}
+
+.food{
+  position:relative;
+  margin:5%;
+  transition: transform 0.2s;
+}
+
+.food:hover{
+transform:scale(1.5);
+}
+
+.calories{
+  transition: transform 0.2s;
+  color:#d6efc7;
+}
+
+.calories:hover{
+  transform: scale(1.5);
+}
+
+.center{
+  position:relative;
+  top:150px;
+  text-align:center;
+}
+
+.food_input{
+  position:relative;
+  top:7px;
+  border-style:none;
+  margin:0 auto;
+  border-radius:100px 20px 20px 100px;
+  background-color:#312c51;
+  width:30%;
+  color:#f0c38e;
+  font-size:30px;
+}
+
+.navbar{
+  z-index:1;
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color:#48426d;
+}
+
+.reset{
+  color:#f0c38e;
+  z-index:-1;
+    font-size:22px;
+  border-radius:20px 100px 100px 20px;
+  background-color:#312c51;
+}
+
+.reset:hover{
+  background-color:#f0c38e;
+  color:#312c51;
+}
+
+.kind-of-food-row-overall{
+  position:relative;
+  top:50px;
+  margin:2%;
+}
+
+.kind{
+  text-align:center;
+  background-color:#312c51;
+  color:#ffdf91;
+  width:98%;
+  height:90%;
+  border-radius:50px;
+  transition: transform 0.2s;
+  box-shadow:0 0 20px #184d47;
+}
+
+.kind:hover{
+  background-color:#f0c38e;
+  color:#312c51;
+  z-index:1;
+  transform: scale(1.1);
+}
+
+.h{
+  height:350px;
+}
+
+.number-of-calories{
+  color:#fad586;
+  position:absolute;
+  right:10px;
+  top:8px;
+  transition:transform 0.2s;
+}
+
+.number-of-calories:hover{
+color:#d6efc7;
+ transform:scale(1.1);
+}
+
+.category-link{
+  text-decoration:none;
+}
+
+.ah, .rh{
+  height:300px;
+}
+
+.add-item, .remove-item{
+  visibility:hidden;
+position:relative;
+top:15px;
+}
+
+.categories-header{
+  font-size:50px;
+}
+
+.fruits-and-vegetables{
+  font-size:40px;
+}
+
+.rice-and-pasta{
+font-size:40px;
+}
+
+.navbar-toggler{
+  color:#f0c38e;
+}
+
+.navbar-toggler:hover{
+  color:#f1aa9b;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .kind-of-food-row-overall{
+    position:relative;
+    top:70px;
+    margin:5%;
+  }
+  .calories{
+    position:relative;
+    top:50px;
+  }
+}
+@media only screen and (min-width:576px) and (max-width: 768px) {
+
+  .kind-of-food-row-overall{
+    position:relative;
+    top:80px;
+}
+.calories{
+  position:relative;
+  top:45px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .kind-of-food-row-overall{
+    position:relative;
+    top:80px;
+}
+.calories{
+  position:relative;
+  top:40px;
+}
+}
