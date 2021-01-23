@@ -92,39 +92,39 @@ $(".number-of-calories").text(localStorage.getItem("all-calories"));
 var added_items_array = JSON.parse(localStorage.getItem("added-items"));
 
 $.each(sweets,function(index,value){
-  $(".sweets").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+sweets[index]+"</h1><img src='"+sweets[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add item</h2></div></div>");
+  $(".sweets").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+sweets[index]+"</h1><img src='"+sweets[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add</h2></div></div>");
 });
 
 $.each(rice.concat(pasta),function(index,value){
-  $(".rp").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+rice.concat(pasta)[index]+"</h1><img src='"+rice.concat(pasta)[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add item</h2></div></div>");
+  $(".rp").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+rice.concat(pasta)[index]+"</h1><img src='"+rice.concat(pasta)[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add</h2></div></div>");
 });
 
 $.each(meat,function(index,value){
-  $(".meat").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+meat[index]+"</h1><img src='"+meat[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add item</h2></div></div>");
+  $(".meat").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+meat[index]+"</h1><img src='"+meat[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add</h2></div></div>");
 });
 
 $.each(fruit.concat(vegetable),function(index,value){
-  $(".fv").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+fruit.concat(vegetable)[index]+"</h1><img src='"+fruit.concat(vegetable)[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add item</h2></div></div>");
+  $(".fv").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+fruit.concat(vegetable)[index]+"</h1><img src='"+fruit.concat(vegetable)[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add</h2></div></div>");
 });
 
 $.each(fish,function(index,value){
-  $(".fish").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+fish[index]+"</h1><img src='"+fish[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add item</h2></div></div>");
+  $(".fish").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+fish[index]+"</h1><img src='"+fish[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add</h2></div></div>");
 });
 
 $.each(dairy,function(index,value){
-  $(".dairy").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+dairy[index]+"</h1><img src='"+dairy[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add item</h2></div></div>");
+  $(".dairy").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+dairy[index]+"</h1><img src='"+dairy[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add</h2></div></div>");
 });
 
 $.each(bread,function(index,value){
-  $(".bread").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+bread[index]+"</h1><img src='"+bread[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add item</h2></div></div>");
+  $(".bread").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+bread[index]+"</h1><img src='"+bread[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add</h2></div></div>");
 });
 
 $.each(drinks,function(index,value){
-  $(".drinks").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+drinks[index]+"</h1><img src='"+drinks[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add item</h2></div></div>");
+  $(".drinks").append("<div class='ah col-lg-2 col-md-3 col-sm-4 col-6'><div class='kind'><h1 style = 'font-size:18px'>"+drinks[index]+"</h1><img src='"+drinks[index]+".png' alt='' width='135px'><h2 class = 'add-item'>add</h2></div></div>");
 });
 
 $.each(added_items_array,function(index,value){
-$(".added").append("<div class = 'rh col-lg-2 col-md-3 col-sm-4 col-6'><div class = 'kind'><h1 style = 'font-size:18px'>"+added_items_array[index]+"</h1><img src = '"+added_items_array[index]+".png' alt = '' width = '135px'><h2 class = 'remove-item'>remove item</h2></div></div>");
+$(".added").append("<div class = 'rh col-lg-2 col-md-3 col-sm-4 col-6'><div class = 'kind'><h1 style = 'font-size:18px'>"+added_items_array[index]+"</h1><img src = '"+added_items_array[index]+".png' alt = '' width = '135px'><h2 class = 'remove-item'>remove</h2></div></div>");
 });
 
 
@@ -164,5 +164,4 @@ remove_calories-=calories_to_be_subtracted;
   $(".navbar-brand").text(remove_calories+" kcal");
   localStorage.setItem("all-calories",remove_calories);
 });
-
 
