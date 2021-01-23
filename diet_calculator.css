@@ -40,7 +40,7 @@ a:hover{
 }
 
 .food:hover{
-transform:scale(1.5);
+transform:scale(1.2);
 }
 
 .calories{
@@ -63,7 +63,7 @@ transform:scale(1.5);
   top:7px;
   border-style:none;
   margin:0 auto;
-  border-radius:100px 20px 20px 100px;
+  border-radius:100px;
   background-color:#312c51;
   width:30%;
   color:#f0c38e;
@@ -80,11 +80,11 @@ transform:scale(1.5);
 }
 
 .reset{
-  color:#f0c38e;
+  color:#312c51;
   z-index:-1;
     font-size:22px;
-  border-radius:20px 100px 100px 20px;
-  background-color:#312c51;
+  border-radius:100px;
+  background-color:#f0c38e;
 }
 
 .reset:hover{
@@ -182,7 +182,7 @@ font-size:40px;
     top:50px;
   }
  .categories-header{
-   font-size:23px; 
+   font-size:23px;
   }
   .fruits-and-vegetables{
     font-size:20px;
@@ -199,6 +199,9 @@ font-size:40px;
  .categories-image{
    width:150px;
   }
+  .food:hover{
+  transform:scale(1);
+  }
 }
 @media only screen and (min-width:576px) and (max-width: 768px) {
 
@@ -209,6 +212,9 @@ font-size:40px;
 .calories{
   position:relative;
   top:45px;
+}
+.food:hover{
+transform:scale(1);
 }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -221,3 +227,4 @@ font-size:40px;
   top:40px;
 }
 }
+
