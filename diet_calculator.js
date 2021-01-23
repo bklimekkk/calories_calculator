@@ -48,8 +48,8 @@ $(document).on("keydown click",function(){
   $(".food").attr("src","");
 });
 
-$(".calories").text(localStorage.getItem("all-calories"));
-$(".navbar-brand").text(localStorage.getItem("all-calories"));
+$(".calories").text(localStorage.getItem("all-calories")+" kcal");
+$(".navbar-brand").text(localStorage.getItem("all-calories")+" kcal");
 
 $(".food").on("click", function(){
   var item_calories = food_calories[food.indexOf($(".food_input").val())];
@@ -59,18 +59,18 @@ $(".food").on("click", function(){
    $(".food").animate({ top: "-=100"}).animate({width:"200px"});
    localStorage.setItem("all-calories",number_of_calories);
 localStorage.setItem("added-items",JSON.stringify(added_items));
-$(".navbar-brand").text(localStorage.getItem("all-calories"));
+$(".navbar-brand").text(localStorage.getItem("all-calories")+" kcal");
 });
 
 $(".food").on("mouseover",function(){
   $(".calories").css("display","block");
   $(".calories").css("color","#fad586");
-  $(".calories").text(food_calories[food.indexOf($(".food_input").val())]);
+  $(".calories").text(food_calories[food.indexOf($(".food_input").val())]+" kcal");
 });
 
 $(".food").on("mouseout",function(){
   $(".calories").css("color","#d6efc7");
-  $(".calories").text(number_of_calories);
+  $(".calories").text(number_of_calories+" kcal");
 });
 
 $(".food_input").on("click",function(){
@@ -80,8 +80,8 @@ $(".food_input").on("click",function(){
 $(".reset").on("click",function(){
   number_of_calories = 0;
   localStorage.setItem("all-calories",number_of_calories);
-  $(".calories").text(number_of_calories);
-    $(".navbar-brand").text(number_of_calories);
+  $(".calories").text(number_of_calories+" kcal");
+    $(".navbar-brand").text(number_of_calories+" kcal");
   added_items = [];
   localStorage.setItem("added-items",JSON.stringify(added_items));
   });
@@ -127,6 +127,7 @@ $.each(added_items_array,function(index,value){
 $(".added").append("<div class = 'rh col-lg-2 col-md-3 col-sm-4 col-6'><div class = 'kind'><h1 style = 'font-size:18px'>"+added_items_array[index]+"</h1><img src = '"+added_items_array[index]+".png' alt = '' width = '135px'><h2 class = 'remove-item'>remove item</h2></div></div>");
 });
 
+
 $(".ah").on("click",function(event){
   var current_number_of_calories;
   if(localStorage.getItem("all-calories")===null)
@@ -146,7 +147,7 @@ $(this).find("img").animate({left:0, top:20});
 $(this).find("img").animate({width:"135px",opacity:1});
 
 $(this).find("img").removeClass("animate");
-  $(".navbar-brand").text(localStorage.getItem("all-calories"));
+  $(".navbar-brand").text(localStorage.getItem("all-calories")+" kcal");
 });
 
 $(".rh").on("click", function(){
@@ -160,6 +161,7 @@ $(".rh").on("click", function(){
 var remove_calories = localStorage.getItem("all-calories");
 var calories_to_be_subtracted = food_calories[food.indexOf($(this).find("h1").text())];
 remove_calories-=calories_to_be_subtracted;
-  $(".navbar-brand").text(remove_calories);
+  $(".navbar-brand").text(remove_calories+" kcal");
   localStorage.setItem("all-calories",remove_calories);
 });
+
