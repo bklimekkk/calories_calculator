@@ -65,7 +65,7 @@ $(".navbar-brand").text(localStorage.getItem("all-calories")+" kcal");
 $(".food").on("mouseover",function(){
   $(".calories").css("display","block");
   $(".calories").css("color","#fad586");
-  $(".calories").text(food_calories[food.indexOf($(".food_input").val())]+" kcal");
+  $(".calories").text(food_calories[food.indexOf($(".food_input").val())]+" kcal for 100 grams");
 });
 
 $(".food").on("mouseout",function(){
@@ -164,4 +164,5 @@ remove_calories-=calories_to_be_subtracted;
   $(".navbar-brand").text(remove_calories+" kcal");
   localStorage.setItem("all-calories",remove_calories);
 });
+
 
